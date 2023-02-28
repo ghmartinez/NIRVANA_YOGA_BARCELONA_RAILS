@@ -1,2 +1,450 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <!-- Uncomment below if you prefer to use text -->
+      <!-- <h1 class="logo me-auto me-lg-0"><a href="index.html">Nirvana Yoga BCN<span>.</span></a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="./" class="logo me-auto me-lg-0"><%= image_tag 'logo.png' %></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="#about">Clases</a></li>
+          <li><a class="nav-link scrollto" href="#services">Tarifas</a></li>
+          <li><a class="nav-link scrollto " href="#team">Nosotros</a></li>
+          <li><a class="nav-link scrollto" href="#cta">Espacio</a></li>
+          <!-- Uncomment below if you want to use a drop down menu in the navbar -->
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="https://momoyoga.com/nirvanayogabcn/" target="_blank" class="get-started-btn">¡Reserva Ya!</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1>Nirvana Yoga</h1>
+          <h2>Let's fly together</h2>
+        </div>
+      </div>
+
+      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="bi bi-calendar-heart"></i>
+            <h3><a class="nav-link scrollto" href="#about">Clases</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="bi bi-cash"></i>
+            <h3><a class="nav-link scrollto" href="#services">Tarifas</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="bi bi-yin-yang"></i>
+            <h3><a class="nav-link scrollto" href="#team">Nosotros</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="bi bi-house-heart"></i>
+            <h3><a class="nav-link scrollto" href="#cta">Espacio</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="bi bi-shop-window"></i>
+            <h3><a class="nav-link scrollto" href="#contact">Contacto</a></h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <a href="https://goo.gl/maps/JVDpShdomFLncMzYA" target="_blank"><i class="bi bi-pin-map-fill"> C/ de Nàpols, 115, entlo. 2ª, 08013, Barcelona</i></a>
+      </div>
+
+      <div class="mt-5">
+        <a href="https://www.instagram.com/nirvanayogabcn/" target="_blank"><i class="bi bi-instagram"> @nirvanayogabcn</i></a>
+      </div>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Clases</h2>
+          <p>Nuestras Clases</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 order-1 order-lg-2 content" data-aos="fade-left" data-aos-delay="100">
+            <h3>Reserva tu clase</h3>
+            <hr>
+            <div class="momoyoga-schedule" data-momo-schedule="https://momoyoga.com/nirvanayogabcn/">
+              <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+              <script src="https://www.momoyoga.com/schedule-plugin/v2/js/schedule.js" crossorigin="anonymous"></script>
+            </div>
+            <hr>
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Nuestras clases de yoga</h3>
+            <p class="fst-italic">
+              En Nirvana Yoga, ofrecemos una amplia variedad de opciones para satisfacer las necesidades de cada estudiante.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> <strong>Yoga Basic</strong>: clase para aprender desde la base (ideal para principiantes)</li>
+              <li><i class="ri-check-double-line"></i> <strong>Sunrise Tribe</strong>: clase al amanecer para todos los niveles</li>
+              <li><i class="ri-check-double-line"></i> <strong>Rocket</strong>: yoga dinámico y divertido perfecto para progresar</li>
+              <li><i class="ri-check-double-line"></i> <strong>Vinyasa Flow</strong>: secuencia fluida de posturas sincronizadas con la respiración</li>
+              <li><i class="ri-check-double-line"></i> <strong>Hatha-Vinyasa</strong>: práctica progresiva y dinámica abierta a todos los niveles</li>
+              <li><i class="ri-check-double-line"></i> <strong>Lunch Break Flow</strong>: clase de mediodía para trabajar posturas y transiciones</li>
+              <li><i class="ri-check-double-line"></i> <strong>Handstand</strong>: clase para aprender hacer la vertical (principiante / intermedio)</li>
+              <li><i class="ri-check-double-line"></i> <strong>Yin Yoga</strong>: práctica lenta de posturas pasivas para estiramientos profundos</li>
+              <li><i class="ri-check-double-line"></i> <strong>Power Vinyasa</strong>: clase desafiante con un toque extra de instensidad</li>
+              <li><i class="ri-check-double-line"></i> <strong>Vinyasa + Invertidas</strong>: secuencia diseñada para prepararnos para invertidas</li>
+              <li><i class="ri-check-double-line"></i> <strong>Rocket Mix</strong>: clase de Rocket con variaciones para experimentar un poco</li>
+              <li><i class="ri-check-double-line"></i> <strong>Yoga XL</strong>: práctica de fin de semana abierta a todos los niveles</li>
+            </ul>
+            <p>Accede a todas las clases que ofrecemos en un montón de horarios disponibles.</p>
+            <div class="mt-4 text-center">
+              <a class="btn" href="https://momoyoga.com/nirvanayogabcn/" target="_blank">Ver todas las clases</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Tarifas</h2>
+          <p>Nuestras Tarifas</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-1-circle"></i></div>
+              <h4><a href="https://www.momoyoga.com/nirvanayogabcn/member/order/create/choose-product" target="_blank">Clase suelta (laborables)</a></h4>
+              <p>Acceso a una clase entre semana.</p>
+              <p>Precio: 12€</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-1-circle-fill"></i></div>
+              <h4><a href="https://www.momoyoga.com/nirvanayogabcn/member/order/create/choose-product" target="_blank">Clase suelta (fin de semana)</a></h4>
+              <p>Acceso a una clase en fin de semana.</p>
+              <p>Precio: 14€</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-5-circle"></i></div>
+              <h4><a href="https://www.momoyoga.com/nirvanayogabcn/member/order/create/choose-product" target="_blank">Bono 5 clases</a></h4>
+              <p>Acceso a 5 clases durante dos meses.</p>
+              <p>Precio: 50€</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-1-square"></i></div>
+              <h4><a href="https://www.momoyoga.com/nirvanayogabcn/member/order/create/choose-product" target="_blank">1x Semana</a></h4>
+              <p>Cuota mensual para 1 clase a la semana.</p>
+              <p>Precio: 36€</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-2-square"></i></div>
+              <h4><a href="https://www.momoyoga.com/nirvanayogabcn/member/order/create/choose-product" target="_blank">2x Semana</a></h4>
+              <p>Cuota mensual para 2 clases a la semana.</p>
+              <p>Precio: 52€</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-rocket-takeoff"></i></div>
+              <h4><a href="https://www.momoyoga.com/nirvanayogabcn/member/order/create/choose-product" target="_blank">Ilimitado</a></h4>
+              <p>Cuota mensual para clases ilimitadas.</p>
+              <p>Precio: 60€</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Nosotros</h2>
+          <p>Conoce a nuestro equipo</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <%= image_tag 'team/team-1.png', class: 'img-fluid' %>
+                <div class="social">
+                  <a href="https://www.instagram.com/antoniayoga_/" target="_blank"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Antonia Hidalgo</h4>
+                <span style="color: black;">El Yoga entró en su vida casi por casualidad y se quedó para siempre.
+                  Su profesión como Directora de Casting la llevó a buscar un camino interno, y lo encontró en este maravilloso mundo.
+                  Comenzó a formarse en Hatha Raja Yoga, siguiendo las enseñanzas de Sri Dharma Mitra, y poco después en Happy Yoga, como Instructora Oficial de Hatha Yoga.
+                  En <strong>Nirvana Yoga</strong> imparte clases de Vinyasa, Hatha y Yin Yoga, con movimientos naturales, que nos hagan disfrutar y sentir, conectando nuestra presencia con el momento presente.
+                  <br><br>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <%= image_tag 'team/team-2.png', class: 'img-fluid' %>
+                <div class="social">
+                  <a href="https://www.instagram.com/yogapere/" target="_blank"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Pere Ibáñez</h4>
+                <span style="color: black;">Formado en Biología, se especializó en Antropología Física y Anatomía Funcional durante su post-doctorado en Cambridge.
+                  Después decidió dejar la vida académica para dedicarse plenamente al Yoga. Se formó como profesor de Vinyasa, Ashtanga, Rocket, así como de técnicas de respiración y Trapeze y Gravity Yoga.
+                  Su amplia formación en anatomía combinado con su experiencia como profesor de Yoga, le permite ofrecer clases de Yoga seguras y adaptadas a las necesidades de cada persona.
+                  Sus clases en <strong>Nirvana Yoga</strong> son retadoras, pero pone especial énfasis en utilizar un enfoque multi-nivel.
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
+          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3>Yoga con técnica, yoga con amor</h3>
+              <p>
+                Nuestra misión es que nuestros alumnos y alumnas se encuentren satisfechos, acompañados y cuidados. Nuestro equipo está formado por profesionales yoguis, con una amplia experiencia en la enseñanza de Asana, Pranayama y meditación.
+              </p>
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="2" class="purecounter"></span>
+                    <p><strong>Estudiantes</strong> que nos han acompañado durante mucho tiempo.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span>Certificaciones</span>
+                    <p><strong>Todas las certificaciones</strong> para impartir las clases más profesionales en el mundo del yoga.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="4" class="purecounter"></span>
+                    <p><strong>Experiencia</strong> de 12+ años entre nuestros profesionales.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-globe-americas"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="4" class="purecounter"></span>
+                    <p><strong>Países</strong> donde nuestro equipo ha impartido clases.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="section-title">
+          <h2>Espacio</h2>
+          <p>Nuestro estudio</p>
+        </div>
+
+        <div class="text-center">
+          <h3> ¿Te interesa nuestro espacio?</h3>
+          <p> Si quieres realizar una actividad en nuestro estudio, contacta con nosotros.</p>
+          <a class="cta-btn scrollto" href="#contact">Contacta</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contacto</h2>
+          <p>Contáctanos</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Ubicación:</h4>
+                <p>Carrer de Nàpols, 115, entlo. 2ª, 08013, Barcelona</p>
+              </div>
+
+              <div class="instagram">
+                <i class="bi bi-instagram"></i>
+                <h4>Instagram:</h4>
+                <p>@nirvanayogabcn</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>nirvanayogabcn@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Llamadas / Whatsapp:</h4>
+                <p><strong>Antonia:</strong> +34 622 076 974</p>
+                <p><strong>Pere:</strong> +34 620 514 926</p>
+              </div>
+            </div>
+          </div>
+
+            <div class="col-lg-7 mt-5 mt-lg-0">
+              <div>
+                <iframe style="border:0; width: 100%; height: 270px;"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.0293989779775!2d2.1771992153471236!3d41.395167903475866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2e3f85fe1bd%3A0xfbc1f671206ff63b!2sC.%20de%20N%C3%A1poles%2C%20115%2C%2008013%20Barcelona!5e0!3m2!1ses!2ses!4v1674572745608!5m2!1ses!2ses"
+                  frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+            <div class="footer-info">
+              <h3>Nirvana Yoga<span>.</span></h3>
+              <p>
+                Carrer de Nàpols, 115, entlo. 2ª <br>
+                08013, Barcelona, España<br><br>
+                <strong>Teléfono:</strong> +34 620 514 926<br>
+                <strong>Email:</strong> nirvanayogabcn@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://www.instagram.com/nirvanayogabcn/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+              </div>
+            </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Nirvana Yoga</span></strong>. Todos los derechos reservados
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+        Diseñado con <i class="bi bi-heart-fill" style="color: red;"></i> por <a href="https://gabrielmr.com/" target="_blank" style="color: red;">Gabriel MR</a> y <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <%# <div id="preloader"></div> %>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
